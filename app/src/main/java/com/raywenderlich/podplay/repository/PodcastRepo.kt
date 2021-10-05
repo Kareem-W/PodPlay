@@ -7,7 +7,7 @@ import com.raywenderlich.podplay.service.RssFeedResponse
 import com.raywenderlich.podplay.service.RssFeedService
 import com.raywenderlich.podplay.util.DateUtils
 
-class PodcastRepo(private var feedService: FeedService) {
+class PodcastRepo(private var feedService: RssFeedService) {
 
 
     suspend fun getPodcast(feedUrl: String): Podcast? {

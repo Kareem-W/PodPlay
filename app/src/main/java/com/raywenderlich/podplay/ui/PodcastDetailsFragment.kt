@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import com.bumptech.glide.Glide
 import com.raywenderlich.podplay.R
+import com.raywenderlich.podplay.adapter.EpisodeListAdapter
 import com.raywenderlich.podplay.databinding.FragmentPodcastDetailsBinding
 import com.raywenderlich.podplay.viewmodel.PodcastViewModel
 
@@ -13,6 +14,8 @@ class PodcastDetailsFragment : Fragment() {
 
     private val podcastViewModel: PodcastViewModel by activityViewModels()
     private lateinit var databinding: FragmentPodcastDetailsBinding
+
+    private lateinit var episodeListAdapter: EpisodeListAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
